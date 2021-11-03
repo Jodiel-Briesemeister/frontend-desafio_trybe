@@ -1,21 +1,12 @@
-import React, { useEffect, useState } from 'react';
-const { io } = require("socket.io-client");
-const socket = io('http://localhost:3001');
+import React from 'react';
 
-function Task({id, task}) {
-  const [taskDescription, setTask] = useState(task);
-
-  useEffect(() => {
-
-    socket.on('update', (data) => {
-      if (id === data._id) setTask(data.price);
-    })
-  }, [id]);
-
+function Task({id, task, date, status}) {
   return (
     <>
-      <li key={id}>
-        {taskDescription}
+      <li>
+        {task}
+        <br/>Adicionada em: {date}
+        <br/> Status: {status}
       </li>
     </>
   )
