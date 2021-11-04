@@ -29,6 +29,20 @@ function FilterSelect({ tasks, setTask, noFilter }) {
 
     return array;
   }
+
+  const statusFilter = (array) => {
+    array.sort(function(a, b) {
+      if (a.status > b.status) {
+        return 1;
+      }
+      if (a.status < b.status) {
+        return -1;
+      }
+      return 0;
+    })
+
+    return array;
+  }
   
   const setFilter = (value) => {
     let orderedTasks = [...tasks];
@@ -41,7 +55,7 @@ function FilterSelect({ tasks, setTask, noFilter }) {
         orderedTasks = dateFilter(orderedTasks);
         break;
       case 'status':
-        // orderedTasks = statusFilter(tasks);
+        orderedTasks = statusFilter(orderedTasks);
         break;
       default:
         orderedTasks = [...noFilter];

@@ -43,17 +43,16 @@ function Home() {
   
   return (
     <div>
-      Tarefas
       <input
         type="text" 
-        placeholder="Adicionar nova tarefa" 
+        placeholder="nova tarefa" 
         onChange={e => setTaskInput(e.target.value)} 
       />
       <AddTaskBtn task={taskInput} />
       <FilterSelect tasks={tasks} setTask={setTask} noFilter={noFilterTasks}/>
 
       <br/><br/>
-      
+
       <EditTaskForm
         hidden={hiddenEditForm} 
         id={taskId} 
