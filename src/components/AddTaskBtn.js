@@ -1,17 +1,17 @@
 import React from 'react';
 
-const { io } = require("socket.io-client");
+const { io } = require('socket.io-client');
+
 const socket = io('http://localhost:3001');
 
 function addTaskBtn({ task }) {
-
   const handleClick = () => {
-    socket.emit('addTask', ( task ));
-  }
+    socket.emit('addTask', (task));
+  };
 
   return (
-    <button onClick={handleClick}>Adicionar</button>
-  )
+    <button type="button" onClick={ handleClick }>Adicionar</button>
+  );
 }
 
 export default addTaskBtn;
