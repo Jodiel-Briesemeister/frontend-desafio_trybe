@@ -11,7 +11,7 @@ function RemoveTaskBtn({ id }) {
   };
 
   return (
-    <button type="button" onClick={ handleClick }>Remover</button>
+    <button className="removeBtn" type="button" onClick={ handleClick }>Remover</button>
   );
 }
 

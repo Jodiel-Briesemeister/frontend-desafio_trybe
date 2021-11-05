@@ -4,6 +4,7 @@ import AddTaskBtn from '../components/AddTaskBtn';
 import RemoveTaskBtn from '../components/RemoveTaskBtn';
 import FilterSelect from '../components/FilterSelect';
 import EditTaskForm from '../components/editTaskForm';
+import '../App.css';
 
 const { io } = require('socket.io-client');
 
@@ -44,7 +45,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="mainContainer">
       <input
         type="text"
         placeholder="nova tarefa"

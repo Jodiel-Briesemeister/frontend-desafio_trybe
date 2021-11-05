@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 function Task({ task, date, status }) {
   return (
     <li>
-      {task}
-      <br />
-      {`Adicionada em: ${date}`}
-      <br />
-      {`Status: ${status}`}
+      <h3>{task}</h3>
+      {/* <br /> */}
+      <p>{`Adicionada em: ${date}`}</p>
+      {/* <br /> */}
+      <p>{`Status: ${status}`}</p>
     </li>
   );
 }
