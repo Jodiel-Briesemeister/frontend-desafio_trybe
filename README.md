@@ -4,12 +4,17 @@ O objetivo desse projeto é desenvolver um sistema capaz de auxiliar as pessoas 
 
 ## Funcionalidades:
 
-1.Visualizar a lista de tarefas;
-2.Esta lista deve ser ordenável por ordem alfabética, data de criação ou por status;
-3.Inserir uma nova tarefa na lista;
-4.Remover uma tarefa da lista;
-5.Atualizar uma tarefa da lista;
-6.A tarefa possui um status editável: pendente, em andamento ou pronto;
+✔️ Visualizar a lista de tarefas;
+
+✔️ Ordenável por ordem alfabética, data de criação ou por status;
+
+✔️ Inserir uma nova tarefa na lista;
+
+✔️ Remover uma tarefa da lista;
+
+✔️ Atualizar uma tarefa da lista;
+
+✔️ A tarefa possui um status editável: pendente, em andamento ou pronto;
 
 # 📌 Instruções para Instalação
 
